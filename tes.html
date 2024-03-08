@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Animated Scroll</title>
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#idcamp">Go to ID Camp</a></li>
+        </ul>
+    </nav>
+
+    <div id="idcamp" class="section">
+        <!-- Konten di bagian dengan ID "idcamp" -->
+        <h2>ID Camp Section</h2>
+        <p>Isi konten di sini...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    nav {
+        background-color: #333;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        color: white;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    .section {
+        padding: 50px;
+        text-align: center;
+    }
+
+    /* Animasi CSS untuk scroll */
+    @keyframes scrollDown {
+        0% {
+            transform: translateY(-100%);
+            opacity: 0;
+        }
+
+        100% {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    // Menangkap elemen <a> yang diklik
+    var link = document.querySelector('a[href="#idcamp"]');
+
+    // Menambahkan event listener untuk menghandle klik
+    link.addEventListener("click", function (e) {
+        e.preventDefault(); // Mencegah perilaku default dari link
+
+        // Mengambil elemen target dengan ID yang sesuai
+        var targetElement = document.getElementById("idcamp");
+
+        // Menggunakan smooth scroll ke elemen target
+        targetElement.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+
+</script>

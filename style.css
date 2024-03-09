@@ -711,7 +711,7 @@ hr {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        height: 56vh;
+        height: 60vh;
 
 
         .nav {
@@ -720,12 +720,14 @@ hr {
         }
     }
     .comment {
-        display: block;
+        
+        .fa-comment {
+            font-size: px;
+        }
     }
 
     .hiking, .camp {
-        width: 300px;
-        box-shadow: none;
+        width: 180px;
         
         button {
             width: 100px;
@@ -748,11 +750,12 @@ hr {
     }
 
     .news1 {
+        width: 350px;
         height: 300px;
     }
 
     .news-container-img {
-        width: 500px;
+        width: 350px;
     }
 
     .news-container-items {

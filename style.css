@@ -726,7 +726,7 @@ hr {
     } */
 
     .comment {
-        display: none;
+        display: block;
     }
 
     .hiking, .camp {

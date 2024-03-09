@@ -396,7 +396,7 @@ main {
 }
 
 .news-container {
-    width: 1000px;
+    /* width: 1000px; */
     height: 700px;
     display: flex;
     flex-direction: column;
@@ -703,4 +703,84 @@ hr {
 
 .shop-item img {
     transition: 0.5s;
+}
+
+@media only screen and (max-width: 800px) {
+    header {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 56vh;
+
+
+        .nav {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+    /* .box-search {
+        width: 10px;
+        height: 10px;
+    } */
+
+    .comment {
+        display: none;
+    }
+
+    .hiking, .camp {
+        width: 300px;
+        box-shadow: none;
+        
+        button {
+            width: 100px;
+            height: 40px;
+            font-size: 12px;
+        }
+    }
+
+    .history-p {
+        font-size: 13px;
+
+        .history-desk {
+            font-size: 10px;
+        }
+    }
+
+    .news-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .news1 {
+        height: 300px;
+    }
+
+    .news-container-img {
+        width: 500px;
+    }
+
+    .news-container-items {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        height: 350px;
+
+        .news-info {
+            border-radius: 20px 20px 0px 0px;
+        }
+    }
+
+    footer {
+        height: 80vh;
+
+        ul, a{
+            font-size: 10px;
+        }
+
+        .footer-end {
+            display: none;
+        }
+    }
 }

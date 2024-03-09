@@ -719,12 +719,6 @@ hr {
             flex-direction: column;
         }
     }
-
-    /* .box-search {
-        width: 10px;
-        height: 10px;
-    } */
-
     .comment {
         display: block;
     }
